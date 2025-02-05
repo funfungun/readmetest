@@ -1,5 +1,3 @@
-# README
-
 ## Panda Market API Integration
 
 본 프로젝트는 Panda Market 플랫폼에서 제공하는 Swagger 를 바탕으로 상품 및 게시글 데이터를 가져오고 조작하는 기능을 구현합니다.
@@ -25,8 +23,6 @@
 
 ## ⚙️ 기술 스택
 
-<div align="center">
-
 | 역할                 | 종류                                                                                                                                                                                                              |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Programming Language | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)                                                                                      |
@@ -35,5 +31,3 @@
 | Data Fetching        | ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white) ![Fetch](https://img.shields.io/badge/Fetch-239120?style=for-the-badge&logoColor=white)                        |
 | Formatting           | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white) |
 | Version Control      | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  |
-
-</div>
