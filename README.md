@@ -1,33 +1,65 @@
-## Panda Market API Integration
+### 요구사항 정리
 
-본 프로젝트는 Panda Market 플랫폼에서 제공하는 Swagger 를 바탕으로 상품 및 게시글 데이터를 가져오고 조작하는 기능을 구현합니다.
+#### **기본**
+- [x] `class` 키워드를 이용하여 `Product` 및 `ElectronicProduct` 클래스를 생성
+  - `Product` 클래스의 속성: `name`, `description`, `price`, `tags`, `images`, `favoriteCount`
+  - `Product` 클래스의 메서드: `favorite()` (호출 시 `favoriteCount` 증가)
+  - `ElectronicProduct` 클래스는 `Product`를 상속하며 `manufacturer` 속성 추가
+- [x] `class` 키워드를 이용하여 `Article` 클래스 생성
+  - `Article` 클래스의 속성: `title`, `content`, `writer`, `likeCount`
+  - `Article` 클래스의 메서드: `like()` (호출 시 `likeCount` 증가)
+- [x] 각 클래스에 `constructor` 작성
+- [x] 추상화/캡슐화/상속/다형성을 고려하여 코드 작성
 
-## 프로젝트 구조
+#### **API 연동**
+- [x] `Article API`를 이용하여 다음 함수 구현:
+  - `getArticleList()`: `GET` 요청 (`page`, `pageSize`, `keyword` 쿼리 파라미터 포함)
+  - `getArticle()`: `GET` 요청
+  - `createArticle()`: `POST` 요청 (`title`, `content`, `image` 포함)
+  - `patchArticle()`: `PATCH` 요청
+  - `deleteArticle()`: `DELETE` 요청
+- [x] `fetch` 또는 `axios` 사용
+  - 응답 상태 코드가 `2XX`가 아닐 경우 콘솔에 에러 메시지 출력
+  - `.then()`, `.catch()`를 활용하여 비동기 처리
 
-```
-📦 프로젝트 루트
- ┣ 📜 index.js                # 애플리케이션 실행 및 기능 실행 코드
- ┣ 📜 ProductService.js       # Product API 관련 함수 정의
- ┗ 📜 ArticleService.js       # Article API 관련 함수 정의
-```
+- [x] `Product API`를 이용하여 다음 함수 구현:
+  - `getProductList()`: `GET` 요청 (`page`, `pageSize`, `keyword` 쿼리 파라미터 포함)
+  - `getProduct()`: `GET` 요청
+  - `createProduct()`: `POST` 요청 (`name`, `description`, `price`, `tags`, `images` 포함)
+  - `patchProduct()`: `PATCH` 요청
+  - `deleteProduct()`: `DELETE` 요청
+- [x] `async/await`을 활용하여 비동기 처리
+  - `try/catch`를 이용한 오류 처리
 
-## 커밋 컨밴션
+#### **인스턴스 생성**
+- [x] `getProductList()`를 통해 받아온 상품 리스트를 `products` 배열에 저장
+  - `tags`에 `"전자제품"`이 포함된 상품은 `ElectronicProduct` 클래스로 생성
+  - 나머지 상품은 `Product` 클래스로 생성
+- [x] `getArticleList()`를 통해 받아온 아티클 리스트를 `articles` 배열에 저장
+  - `Article` 클래스로 생성
 
-| 커밋     | 역할                                                                  |
-| -------- | --------------------------------------------------------------------- |
-| Feat     | 기능 구현과 관련된 커밋                                               |
-| Fix      | 버그를 고친 경우                                                      |
-| Refactor | 더 좋은 코드로 개선한 경우 (기능에 변화가 없는 경우) ex-코드리뷰 반영 |
-| Docs     | README.md 등 문서를 작성한 경우                                       |
-| Chore    | 주석 추가, 자잘한 문서 수정                                           |
+#### **코드 분리**
+- [x] API 관련 함수 분리:
+  - `ProductService.js` → `Product API` 관련 함수
+  - `ArticleService.js` → `Article API` 관련 함수
+- [x] 기타 코드는 `main.js`에 작성
+  - `import`를 활용하여 함수 호출 및 동작 확인
 
-## ⚙️ 기술 스택
+---
 
-| 역할                 | 종류                                                                                                                                                                                                              |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Programming Language | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)                                                                                      |
-| JavaScript Runtime   | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)                                                                                                           |
-| Package Manager      | ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)                                                                                                               |
-| Data Fetching        | ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=Axios&logoColor=white) ![Fetch](https://img.shields.io/badge/Fetch-239120?style=for-the-badge&logoColor=white)                        |
-| Formatting           | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white) |
-| Version Control      | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  |
+### **심화 요구사항**
+- [x] `Article` 클래스에 `createdAt` 속성 추가 (`constructor` 호출 시 현재 시간 저장)
+
+---
+
+## **주요 변경사항**
+- `class` 기반 설계 적용
+- API 호출 로직 구현 (`fetch`/`axios`)
+- 데이터에 맞는 인스턴스 생성 및 관리
+- 모듈화 (`ProductService.js`, `ArticleService.js`, `main.js`)
+
+## **스크린샷**
+![image](이미지url)
+
+## **멘토에게**
+- 셀프 코드 리뷰를 통해 질문 이어가겠습니다.
