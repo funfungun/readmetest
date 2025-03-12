@@ -1,13 +1,12 @@
-# {팀 이름}
+# 3팀
 
-[팀 협업 문서 링크 게시]
+https://plum-supernova-9cd.notion.site/1-SEVEN-3-1ac7c057a4ec8003ad43f7721a18d2dc?pvs=4
 
 ## 팀원 구성
-- **웨인** [(개인 Github 링크)]
-- **제이든** [(개인 Github 링크)]
-- **마크** [(개인 Github 링크)]
-- **데이지** [(개인 Github 링크)]
-- **제이** [(개인 Github 링크)]
+- **김건** [([개인 Github 링크](https://github.com/funfungun))]
+- **김한솔** [(개인 Github 링크)]
+- **장현태** [(개인 Github 링크)]
+- **이민호** [(개인 Github 링크)]
 
 ---
 
