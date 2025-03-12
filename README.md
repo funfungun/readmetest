@@ -11,7 +11,7 @@ https://plum-supernova-9cd.notion.site/1-SEVEN-3-1ac7c057a4ec8003ad43f7721a18d2d
 ---
 
 ## 프로젝트 소개
-![이미지 설명](https://private-user-images.githubusercontent.com/49513356/421751374-1e89b7f4-8e55-4d67-b323-7b2949ddee08.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE3NjQyMzQsIm5iZiI6MTc0MTc2MzkzNCwicGF0aCI6Ii80OTUxMzM1Ni80MjE3NTEzNzQtMWU4OWI3ZjQtOGU1NS00ZDY3LWIzMjMtN2IyOTQ5ZGRlZTA4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEyVDA3MTg1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWNmMDAxMWQwNTdmMmUxMjYxOGE3YzNiMDk2MDNhODQxN2M4M2Q4ZmY1ZTg2NWRjMWY5NmQ1MTM2YmI1MGI1N2UmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.2ZfBrIgb5z6xu_hUYw_-oc7OK7nAmY7zoAO92mpIplc)
+![이미지 설명](https://github.com/user-attachments/assets/0c9404ce-d7c5-4948-9ed2-303165dfcffe)
 - **프로젝트명:** 🏋️‍♀️ SEVEN, 운동 인증 커뮤니티 서비스. 땀 흘린 순간을 기록하고, 함께 성장하는 운동 인증 커뮤니티! 오늘의 운동을 인증하고 사람들과 공유하며 동기부여를 얻어보세요. 당신의 꾸준함이 곧 누군가의 영감이 됩니다! 💪🔥
 #운동인증 #함께성장 #SEVEN
 - **프로젝트 기간:** 2025.02.25 ~ 2025.03.18
