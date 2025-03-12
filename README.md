@@ -1,84 +1,162 @@
-## 요구사항
+{팀 이름}
+(팀 협업 문서 링크 게시)
 
-### 기본
-- [x] PostgreSQL를 이용해 주세요.
-- [x] 데이터 모델 간의 관계를 고려하여 `onDelete`를 설정해 주세요.
-- [x] 데이터베이스 시딩 코드를 작성해 주세요.
-- [x] 각 API에 적절한 에러 처리를 해 주세요.
-- [x] 각 API 응답에 적절한 상태 코드를 리턴하도록 해 주세요.
+팀원 구성
+웨인 (개인 Github 링크)
+제이든 (개인 Github 링크)
+마크 (개인 Github 링크)
+데이지 (개인 Github 링크)
+제이 (개인 Github 링크)
 
-### 중고마켓
-- [x] `Product` 스키마를 작성해 주세요.
-  - `id`, `name`, `description`, `price`, `tags`, `createdAt`, `updatedAt` 필드를 가집니다.
-  - 필요한 필드가 있다면 자유롭게 추가해 주세요.
-- [x] 상품 등록 API를 만들어 주세요.
-  - `name`, `description`, `price`, `tags`를 입력하여 상품을 등록합니다.
-- [x] 상품 상세 조회 API를 만들어 주세요.
-  - `id`, `name`, `description`, `price`, `tags`, `createdAt`를 조회합니다.
-- [x] 상품 수정 API를 만들어 주세요.
-  - `PATCH` 메서드를 사용해 주세요.
-- [x] 상품 삭제 API를 만들어 주세요.
-- [x] 상품 목록 조회 API를 만들어 주세요.
-  - `id`, `name`, `price`, `createdAt`를 조회합니다.
-  - `offset` 방식의 페이지네이션 기능을 포함해 주세요.
-  - 최신순(`recent`)으로 정렬할 수 있습니다.
-  - `name`, `description`에 포함된 단어로 검색할 수 있습니다.
-- [x] 각 API에 적절한 에러 처리를 해 주세요.
-- [x] 각 API 응답에 적절한 상태 코드를 리턴하도록 해 주세요.
+프로젝트 소개
+프로그래밍 교육 사이트의 백엔드 시스템 구축
+프로젝트 기간: 2024.08.13 ~ 2024.09.03
+기술 스택
+Backend: Express.js, PrismaORM
+Database: MongoDB
+공통 Tool: Git & Github, Discord
+팀원별 구현 기능 상세
+웨인
+(자신이 개발한 기능에 대한 사진이나 gif 파일 첨부)
 
-### 자유게시판
-- [x] `Article` 스키마를 작성해 주세요.
-  - `id`, `title`, `content`, `createdAt`, `updatedAt` 필드를 가집니다.
-- [x] 게시글 등록 API를 만들어 주세요.
-  - `title`, `content`를 입력해 게시글을 등록합니다.
-- [x] 게시글 상세 조회 API를 만들어 주세요.
-  - `id`, `title`, `content`, `createdAt`를 조회합니다.
-- [x] 게시글 수정 API를 만들어 주세요.
-- [x] 게시글 삭제 API를 만들어 주세요.
-- [x] 게시글 목록 조회 API를 만들어 주세요.
-  - `id`, `title`, `content`, `createdAt`를 조회합니다.
-  - `offset` 방식의 페이지네이션 기능을 포함해 주세요.
-  - 최신순(`recent`)으로 정렬할 수 있습니다.
-  - `title`, `content`에 포함된 단어로 검색할 수 있습니다.
+소셜 로그인 API
+구글 소셜 로그인 API를 활용하여 소셜 로그인 기능을 구현
+로그인 후 추가 정보 입력을 위한 API 엔드포인트 개발
+회원 추가 정보 입력 API
+회원 유형(관리자, 학생)에 따른 조건부 입력 처리 API 구현
+제이든
+(자신이 개발한 기능에 대한 사진이나 gif 파일 첨부)
 
-### 댓글
-- [x] 댓글 등록 API를 만들어 주세요.
-  - `content`를 입력하여 댓글을 등록합니다.
-  - 중고마켓, 자유게시판 댓글 등록 API를 따로 만들어 주세요.
-- [x] 댓글 수정 API를 만들어 주세요.
-  - `PATCH` 메서드를 사용해 주세요.
-- [x] 댓글 삭제 API를 만들어 주세요.
-- [x] 댓글 목록 조회 API를 만들어 주세요.
-  - `id`, `content`, `createdAt` 를 조회합니다.
-  - `cursor` 방식의 페이지네이션 기능을 포함해 주세요.
-  - 중고마켓, 자유게시판 댓글 목록 조회 API를 따로 만들어 주세요.
+회원별 권한 관리
+사용자의 역할에 따라 권한을 설정하는 API 구현
+관리자 페이지와 일반 사용자 페이지를 위한 조건부 라우팅 기능 개발
+반응형 레이아웃 API
+클라이언트에서 전달된 요청에 맞춰 반응형 레이아웃을 위한 API 엔드포인트 구현
+마크
+(자신이 개발한 기능에 대한 사진이나 gif 파일 첨부)
 
-### 유효성 검증
-- [x] 상품 등록 시 필요한 필드(`이름`, `설명`, `가격` 등)의 유효성을 검증하는 미들웨어를 구현합니다.
-- [x] 게시물 등록 시 필요한 필드(`제목`, `내용` 등)의 유효성 검증하는 미들웨어를 구현합니다.
+수강생 정보 관리 API
+fetch(GET)을 사용하여 학생의 수강 정보를 조회하는 API 엔드포인트 개발
+수강 정보의 반응형 UI 구성
+공용 Button API
+공통으로 사용할 버튼 기능을 처리하는 API 구현
+데이지
+(자신이 개발한 기능에 대한 사진이나 gif 파일 첨부)
 
-### 이미지 업로드
-- [x] `multer` 미들웨어를 사용하여 이미지 업로드 API를 구현해주세요.
-  - 업로드된 이미지는 서버에 저장하고, 해당 이미지의 경로를 `response` 객체에 포함해 반환합니다.
+관리자 API
+Path Parameter를 활용한 동적 라우팅 기능 구현
+fetch(PATCH, DELETE)를 사용하여 학생 정보를 수정하고 탈퇴하는 API 엔드포인트 개발
+CRUD 기능
+학생 정보 CRUD 기능을 제공하는 API 구현
+회원관리 슬라이더
+학생별 정보 목록을 carousel 방식으로 보여주는 API 개발
+제이
+(자신이 개발한 기능에 대한 사진이나 gif 파일 첨부)
 
-### 에러 처리
-- [x] 모든 예외 상황을 처리할 수 있는 에러 핸들러 미들웨어를 구현합니다.
-  - 서버 오류(`500`), 사용자 입력 오류(`400` 시리즈), 리소스 찾을 수 없음(`404`) 등 상황에 맞는 상태값을 반환합니다.
+학생 시간 정보 관리 API
+학생별 시간 정보를 조회하는 API 구현
+fetch(GET)을 통해 실시간 접속 현황을 관리
+수정 및 탈퇴 API
+fetch(PATCH, DELETE)을 사용하여 수강생의 개인정보 수정 및 탈퇴 처리
+공용 Modal API
+공통 Modal 컴포넌트를 처리하는 API 구현
+파일 구조
+src
+ ┣ client
+ ┃ ┣ __mocks__
+ ┃ ┃ ┣ courses.json
+ ┃ ┃ ┗ index.ts
+ ┃ ┣ features
+ ┃ ┃ ┣ Layout
+ ┃ ┃ ┃ ┣ images
+ ┃ ┃ ┃ ┃ ┗ codeit-logo-purple.svg
+ ┃ ┃ ┃ ┣ Layout.module.scss
+ ┃ ┃ ┃ ┣ Layout.stories.tsx
+ ┃ ┃ ┃ ┣ Layout.tsx
+ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┗ LessonSearch
+ ┃ ┃ ┃ ┣ components
+ ┃ ┃ ┃ ┃ ┣ CourseResult
+ ┃ ┃ ┃ ┃ ┃ ┣ CourseResult.module.scss
+ ┃ ┃ ┃ ┃ ┃ ┗ CourseResult.tsx
+ ┃ ┃ ┃ ┗ EmptyResult
+ ┃ ┃ ┃ ┃ ┣ EmptyResult.module.scss
+ ┃ ┃ ┃ ┃ ┣ EmptyResult.tsx
+ ┃ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┣ LessonSearch.module.scss
+ ┃ ┃ ┣ LessonSearch.stories.tsx
+ ┃ ┃ ┣ LessonSearch.tsx
+ ┃ ┃ ┗ index.ts
+ ┃ ┣ models
+ ┃ ┃ ┣ course.d.ts
+ ┃ ┃ ┗ react.d.ts
+ ┃ ┣ shared
+ ┃ ┃ ┣ api
+ ┃ ┃ ┃ ┣ base.ts
+ ┃ ┃ ┃ ┗ course.ts
+ ┃ ┃ ┣ components
+ ┃ ┃ ┃ ┣ Button
+ ┃ ┃ ┃ ┃ ┣ Button.module.scss
+ ┃ ┃ ┃ ┃ ┣ Button.tsx
+ ┃ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┃ ┣ CourseInfo
+ ┃ ┃ ┃ ┃ ┣ CourseInfo.module.scss
+ ┃ ┃ ┃ ┃ ┣ CourseInfo.stories.tsx
+ ┃ ┃ ┃ ┃ ┗ CourseInfo.tsx
+ ┃ ┃ ┃ ┣ Input
+ ┃ ┃ ┃ ┃ ┣ Input.module.scss
+ ┃ ┃ ┃ ┃ ┣ Input.stories.tsx
+ ┃ ┃ ┃ ┃ ┣ Input.tsx
+ ┃ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┃ ┗ Select
+ ┃ ┃ ┃ ┃ ┣ images
+ ┃ ┃ ┃ ┃ ┃ ┗ triangle-dark.svg
+ ┃ ┃ ┃ ┃ ┣ Select.module.scss
+ ┃ ┃ ┃ ┃ ┣ Select.stories.tsx
+ ┃ ┃ ┃ ┃ ┣ Select.tsx
+ ┃ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┗ helpers
+ ┃ ┃ ┃ ┣ api
+ ┃ ┃ ┃ ┃ ┣ __tests__
+ ┃ ┃ ┃ ┃ ┃ ┣ base.test.ts
+ ┃ ┃ ┃ ┃ ┃ ┣ helpers.test.ts
+ ┃ ┃ ┃ ┃ ┃ ┗ wrapper.test.ts
+ ┃ ┃ ┃ ┃ ┣ wrapper
+ ┃ ┃ ┃ ┃ ┃ ┣ fetch.ts
+ ┃ ┃ ┃ ┃ ┃ ┗ index.ts
+ ┃ ┃ ┃ ┣ base.ts
+ ┃ ┃ ┃ ┣ error.ts
+ ┃ ┃ ┃ ┣ helpers.ts
+ ┃ ┃ ┃ ┣ index.ts
+ ┃ ┃ ┃ ┗ type.ts
+ ┃ ┃ ┗ react-query.ts
+ ┣ server
+ ┃ ┣ controllers
+ ┃ ┃ ┣ authController.ts
+ ┃ ┃ ┗ userController.ts
+ ┃ ┣ models
+ ┃ ┃ ┣ userModel.ts
+ ┃ ┃ ┗ courseModel.ts
+ ┃ ┣ routes
+ ┃ ┃ ┣ authRoutes.ts
+ ┃ ┃ ┗ userRoutes.ts
+ ┃ ┣ middleware
+ ┃ ┃ ┣ authMiddleware.ts
+ ┃ ┃ ┗ errorHandler.ts
+ ┃ ┣ app.ts
+ ┃ ┗ server.ts
+ ┣ App.tsx
+ ┣ _mixin.scss
+ ┣ common.scss
+ ┣ index.tsx
+ ┣ react-app-env.d.ts
+ ┣ reportWebVitals.js
+ ┗ setupTests.js
 
-### 라우트 중복 제거
-- [x] 중복되는 라우트 경로(예: `/users`에 대한 `get` 및 `post` 요청)를 `app.route()`로 통합해 중복을 제거합니다.
-- [x] `express.Router()`를 활용하여 중고마켓/자유게시판 관련 라우트를 별도의 모듈로 구분합니다.
+구현 홈페이지
+(개발한 홈페이지에 대한 링크 게시)
 
-### 배포
-- [x] `.env` 파일에 환경 변수를 설정해 주세요.
-- [x] `CORS`를 설정해 주세요.
-- [x] `render.com`으로 배포해 주세요.
+https://www.codeit.kr/
 
-## 주요 변경사항
-- 요구사항을 기반으로 데이터베이스, API, 미들웨어, 에러 처리, 배포 환경 설정 등 구현
-
-## 스크린샷
-- 기능별 API 테스트 및 페이지네이션, 검색, 정렬 기능 동작 스크린샷 첨부 예정
-
-## 멘토에게
-- 코드 리뷰 부탁드립니다.
+프로젝트 회고록
+(제작한 발표자료 링크 혹은 첨부파일 첨부)
