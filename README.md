@@ -3,15 +3,17 @@
 https://plum-supernova-9cd.notion.site/1-SEVEN-3-1ac7c057a4ec8003ad43f7721a18d2dc?pvs=4
 
 ## 팀원 구성
-- **김건** [https://github.com/funfungun]
-- **김한솔** [(개인 Github 링크)]
-- **장현태** [(개인 Github 링크)]
-- **이민호** [(개인 Github 링크)]
+- **김건** https://github.com/funfungun
+- **김한솔** https://github.com/kimhansol2
+- **장현태** https://github.com/gusxo999
+- **이민호** https://github.com/toomin5
 
 ---
 
 ## 프로젝트 소개
-- **프로젝트명:** 프로그래밍 교육 사이트의 백엔드 시스템 구축
+- **프로젝트명:** SEVEN, 운동 인증 커뮤니티 서비스
+- 땀 흘린 순간을 기록하고, 함께 성장하는 운동 인증 커뮤니티! 오늘의 운동을 인증하고 사람들과 공유하며 동기부여를 얻어보세요. 당신의 꾸준함이 곧 누군가의 영감이 됩니다! 💪🔥
+#운동인증 #함께성장 #SEVEN
 - **프로젝트 기간:** 2024.08.13 ~ 2024.09.03
 
 ### 기술 스택
