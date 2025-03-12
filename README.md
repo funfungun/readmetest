@@ -3,7 +3,7 @@
 https://plum-supernova-9cd.notion.site/1-SEVEN-3-1ac7c057a4ec8003ad43f7721a18d2dc?pvs=4
 
 ## 팀원 구성
-- **김건** [(https://github.com/funfungun)]
+- **김건** [https://github.com/funfungun]
 - **김한솔** [(개인 Github 링크)]
 - **장현태** [(개인 Github 링크)]
 - **이민호** [(개인 Github 링크)]
