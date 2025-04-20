@@ -1,5 +1,4 @@
-```
-erDiagram
+```erDiagram
     USER {
         string id PK
         string email
