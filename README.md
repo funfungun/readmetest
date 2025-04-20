@@ -1,4 +1,5 @@
-```erDiagram
+```mermaid
+erDiagram
     USER {
         string id PK
         string email
