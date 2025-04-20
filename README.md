@@ -77,5 +77,4 @@ erDiagram
 
   POSTS ||--o{ POST_LIKES : likedBy
   POSTS ||--o{ POST_COMMENTS : has
-
 ```
