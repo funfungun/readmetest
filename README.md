@@ -1,74 +1,81 @@
 ```mermaid
 erDiagram
 
-  USER {
+  USERS {
     uuid id PK
-    string email
     string nickname
+    string email
     string password
     datetime createdAt
   }
 
-  PRODUCT {
+  PRODUCTS {
     uuid id PK
     string title
     string description
     int price
     uuid userId FK
     datetime createdAt
+    datetime updatedAt
   }
 
-  PRODUCT_IMAGE {
+  PRODUCT_IMAGES {
     uuid id PK
-    uuid productId FK
     string imageUrl
-  }
-
-  PRODUCT_TAG {
-    uuid id PK
     uuid productId FK
-    string tag
   }
 
-  PRODUCT_LIKE {
+  PRODUCT_LIKES {
     uuid id PK
     uuid userId FK
     uuid productId FK
     datetime createdAt
   }
 
-  PRODUCT_COMMENT {
+  PRODUCT_COMMENTS {
     uuid id PK
-    uuid userId FK
-    uuid productId FK
     string content
+    uuid userId FK
+    uuid productId FK
     datetime createdAt
   }
 
-  ARTICLE {
+  POSTS {
     uuid id PK
     string title
     string content
     uuid userId FK
     datetime createdAt
+    datetime updatedAt
   }
 
-  ARTICLE_IMAGE {
+  POST_LIKES {
     uuid id PK
-    uuid articleId FK
-    string imageUrl
+    uuid userId FK
+    uuid postId FK
+    datetime createdAt
   }
 
-  USER ||--o{ PRODUCT : has
-  PRODUCT ||--o{ PRODUCT_IMAGE : has
-  PRODUCT ||--o{ PRODUCT_TAG : has
+  POST_COMMENTS {
+    uuid id PK
+    string content
+    uuid userId FK
+    uuid postId FK
+    datetime createdAt
+  }
 
-  USER ||--o{ PRODUCT_LIKE : likes
-  PRODUCT ||--o{ PRODUCT_LIKE : liked_by
+  USERS ||--o{ PRODUCTS : has
+  USERS ||--o{ PRODUCT_LIKES : likes
+  USERS ||--o{ PRODUCT_COMMENTS : comments
+  USERS ||--o{ POSTS : writes
+  USERS ||--o{ POST_LIKES : likes
+  USERS ||--o{ POST_COMMENTS : comments
 
-  USER ||--o{ PRODUCT_COMMENT : comments
-  PRODUCT ||--o{ PRODUCT_COMMENT : has_comments
+  PRODUCTS ||--o{ PRODUCT_IMAGES : has
+  PRODUCTS ||--o{ PRODUCT_LIKES : likedBy
+  PRODUCTS ||--o{ PRODUCT_COMMENTS : has
 
-  USER ||--o{ ARTICLE : has
-  ARTICLE ||--o{ ARTICLE_IMAGE : has
+  POSTS ||--o{ POST_LIKES : likedBy
+  POSTS ||--o{ POST_COMMENTS : has
+
 ```
